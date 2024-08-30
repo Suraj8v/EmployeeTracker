@@ -1,4 +1,29 @@
 h1{
   display: flex;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.emplist{
+  font-family: arial;
+  width: 70%;
+  margin: auto;
+  
+}
+
+.emplist td,th{
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: left;
+  padding: 8px;
+}
+
+.emplist tr{
+  background-color: antiquewhite;
 }

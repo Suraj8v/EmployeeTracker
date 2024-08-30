@@ -16,14 +16,27 @@ function EmployeeList() {
   return (
     <div>
       <h2>Employee List</h2>
-      {/* <button onClick={()=>ff()}>Get list</button> */}
-      <ul>
-        {employees.map(e=>(
-          <li key={e.id}>
-            {e.firstName} {e.lastName}
-          </li>
+     <table className="emplist">
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+          {employees.map(e=>(
+            <tr key={e.id}>
+          <td>{e.id}</td>
+          <td>{e.firstName}</td>
+          <td>{e.lastName}</td>
+          <td>{e.email}</td>
+          </tr>
         ))}
-      </ul>
+       </tbody>
+        
+     </table>
 
     </div>
   )
